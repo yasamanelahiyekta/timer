@@ -1,5 +1,25 @@
-div{
+div {
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+.mom {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+}
+
+button {
+    color: black;
+    background-color: green;
+    font-size: x-large;
+    border-radius: 21px;
+    border-color: green;
+}
+
+p {
+    font-size: xx-large;
+
 }

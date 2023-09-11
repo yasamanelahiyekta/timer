@@ -5,8 +5,8 @@ var p = document.querySelector("p");
 
 var time = null;
 var h = 0;
-var m = 59;
-var s = 57;
+var m = 0;
+var s = 0;
 var flag = true;
 start.addEventListener("click", function (e) {
   if (flag == true) {
@@ -26,24 +26,23 @@ start.addEventListener("click", function (e) {
         s = 0;
       }
 
-      p.innerText = `${h < 10 ? "0" + h : h} : ${m < 10 ? "0" + m : m}:${
-        s < 10 ? "0" + s : s
-      }`;
+      p.innerText = `${h < 10 ? "0" + h : h} : ${m < 10 ? "0" + m : m}:${s < 10 ? "0" + s : s
+        }`;
     }, 1000);
-  flag=false   
+    flag = false
   }
 
 });
 
 puase.addEventListener("click", function () {
   clearInterval(time);
-  flag=true
+  flag = true
 });
 reset.addEventListener("click", function () {
   clearInterval(time);
   h = 0;
   m = 0;
   s = 0;
-  flag=true
+  flag = true
   p.innerText = "00:00:00";
 });
